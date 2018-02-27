@@ -45,6 +45,7 @@ let button = new Button({
     image1.image = IMAGE_PATH + rand + '.png';
 
     var rand1 = 1 + Math.floor(Math.random() * 6);
+    image2.image = IMAGE_PATH + rand + '.png';
     
 
     if (rand == rand1) {
@@ -76,6 +77,16 @@ let label = new TextView({
 // Display images with different scale modes
 
 let image1 = new ImageView({
+  top: 'prev() 10',
+  width: 100,
+  height: 100,
+  centerX: 0,
+  scaleMode: 'fill',
+  image: IMAGE_PATH + 'whitedice.png'
+
+}).appendTo(ui.contentView);
+
+let image2 = new ImageView({
   top: 'prev() 10',
   width: 100,
   height: 100,
