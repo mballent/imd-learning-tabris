@@ -103,7 +103,7 @@ let winnerimage = new ImageView({
   centerX: 0,
   scaleMode: 'fill',
   }).appendTo(ui.contentView);
-x
+
   let resetbutton = new Button({
     centerX: 0,
     top: 'prev() 10',
