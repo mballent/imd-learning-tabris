@@ -9,8 +9,8 @@ const {
   app, TextInput
 } = require('tabris');
 
-const IMAGE_PATH = 'https://mrmccormack.github.io/imd-learning-tabris/images/';
-const MY_GITHUB_REPO = 'https://github.com/mrmccormack/imd-learning-tabris'
+const IMAGE_PATH = 'https://mballent.github.io/imd-learning-tabris//images/';
+const MY_GITHUB_REPO = 'https://mballent.github.io/imd-learning-tabris/'
 
 // global variables
 let numWins = 0;
