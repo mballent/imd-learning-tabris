@@ -100,7 +100,7 @@ let winnerimage = new ImageView({
       label.text = 'New Game';
       winnerimage.image = '';
       numWins = 0;
-      image1.image = 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png';
+      image1.image = IMAGE_PATH + 'person.png';
 
   }).appendTo(ui.contentView);
 
