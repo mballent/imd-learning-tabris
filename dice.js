@@ -1,4 +1,4 @@
-// This is a simple Tabris.js app. by MR. M. -  Feel free to modify as you please.
+    // This is a simple Tabris.js app. by MR. M. -  Feel free to modify as you please.
 
 const {
   Button,
@@ -9,8 +9,8 @@ const {
   app, TextInput
 } = require('tabris');
 
-const IMAGE_PATH = 'https://github.com/mballent/imd-learning-tabris/images/';
-const MY_GITHUB_REPO = 'https://github.com/mballent/imd-learning-tabris'
+const IMAGE_PATH = 'https://mrmccormack.github.io/imd-learning-tabris/images/';
+const MY_GITHUB_REPO = 'https://github.com/mrmccormack/imd-learning-tabris'
 
 // global variables
 let numWins = 0;
@@ -44,10 +44,13 @@ let button = new Button({
 
     image1.image = IMAGE_PATH + rand + '.png';
 
-    if (rand == 6) {
-      label.text = userText.text + '- WINNER, you got a 6';
+    var rand1 = 1 + Math.floor(Math.random() * 6);
+    
+
+    if (rand == rand1) {
+      label.text = userText.text + '- WINNER';
       numWins = numWins + 1 ;
-      winnerimage.image = IMAGE_PATH + 'winner.png';
+      winnerimage.image = IMAGE_PATH + 'winner.jpg';
     } else {
       label.text = userText.text  + ' - Try again- Wins so far ' + numWins;
       winnerimage.image = '';
@@ -89,7 +92,7 @@ let winnerimage = new ImageView({
   centerX: 0,
   scaleMode: 'fill',
   }).appendTo(ui.contentView);
-
+x
   let resetbutton = new Button({
     centerX: 0,
     top: 'prev() 10',
@@ -100,7 +103,7 @@ let winnerimage = new ImageView({
       label.text = 'New Game';
       winnerimage.image = '';
       numWins = 0;
-      image1.image = IMAGE_PATH + 'person.png';
+      image1.image = 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png';
 
   }).appendTo(ui.contentView);
 
