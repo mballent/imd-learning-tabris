@@ -45,7 +45,7 @@ let button = new Button({
     image1.image = IMAGE_PATH + rand + '.png';
 
     var rand1 = 1 + Math.floor(Math.random() * 6);
-    image2.image = IMAGE_PATH + rand + '.png';
+    image2.image = IMAGE_PATH + rand1 + '.png';
     
 
     if (rand == rand1) {
